@@ -9,7 +9,7 @@
 
 //? Functions Started
 /*
-//todo - normal function - function declaration
+todo - normal function - function declaration
 function calcAge(birthYear) {
   return 2026 - birthYear;
 }
@@ -17,13 +17,13 @@ function calcAge(birthYear) {
 const resultAge = calcAge(1991);
 console.log(resultAge);
 
-//todo - anonymous function - function expression
+todo - anonymous function - function expression
 
 const myNameUpper = function (theName) {
   return theName.toUpperCase();
 };
 
-//todo - arrow function - function expression
+todo - arrow function - function expression
 const oddEvenFinder = (num) => (num % 2 === 0 ? `Even` : `Odd`);
 console.log(oddEvenFinder(44));
 
@@ -117,7 +117,7 @@ console.log(friends.includes(`Akash`)); //! true || false
 */
 
 //? Objects (43)
-
+/*
 const soham = {
   firstName: `Soham`,
   lastName: `Datta`,
@@ -142,3 +142,86 @@ soham.calcAge();
 console.log(soham.age);
 
 console.log(soham.getSummary());
+*/
+
+//? Loops (47)
+/*
+todo - FOR LOOP
+for (let counter = 1; counter <= 10; counter++) {
+  console.log(`Ligting weight repetition ${counter}`);
+}
+
+const soham = [
+  `Soham`,
+  `Datta`,
+  1991,
+  `soham@codekmp.in`,
+  [`Amitabh`, `Akash`, `Anindya`, `Souvik`],
+  true,
+];
+
+for (let i = 0; i < soham.length; i++) {
+  console.log(soham[i], typeof soham[i]);
+}
+
+const years = [1991, 1995, 2008, 1984, 1999, 2009];
+const age = [];
+
+for (let i = 0; i < years.length; i++) {
+  age.push(2026 - years[i]);
+}
+
+console.log(age);
+
+console.log(`---------CONTINUE---------`);
+for (let i = 0; i < soham.length; i++) {
+  if (typeof soham[i] !== `string`) {
+    continue;
+  }
+  console.log(soham[i], typeof soham[i]);
+}
+*/
+
+//? 49
+
+/*
+const soham = [
+  `Soham`,
+  `Datta`,
+  1991,
+  `soham@codekmp.in`,
+  [`Amitabh`, `Akash`, `Anindya`, `Souvik`],
+  true,
+];
+
+for (let i = soham.length - 1; 0 <= i; i--) {
+  console.log(soham[i]);
+}
+
+let star = `*`;
+for (let i = 0; i < 5; i++) {
+  console.log(star);
+  star += `*`;
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`----- Exercise: ${exercise} -----`);
+  for (let reps = 1; reps < 6; reps++) {
+    console.log(`Exercise ${exercise}: Lifting Weight repetition: ${reps}`);
+  }
+}
+
+let counter = 0;
+while (counter < 10) {
+  console.log(`Hey this is While Loop. The Counter: ${counter}`);
+  counter++;
+}
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+if (dice === 6) console.log(`The value of Dice: ${dice}`);
+while (dice !== 6) {
+  console.log(`The value of Dice: ${dice}`);
+  dice = Math.trunc(Math.random() * 6 + 1);
+  if (dice === 6) console.log(`The value of Dice: ${dice}`);
+}
+*/
